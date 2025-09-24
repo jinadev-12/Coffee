@@ -63,7 +63,7 @@ function Home() {
           </div>
 
           {/* para and button */}
-          <div className="">
+          <div className="mt-10">
             <p className="text-white font-thin  mt-6">
               Find delicious hot and cold coffes with the best varieties,calm
               the pleasure and enjoy a good coffe <br />
