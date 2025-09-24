@@ -3,7 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root{
     --first-color: hsl(166, 80%, 40%);
   --first-color-alt: hsl(166, 78%, 38%);

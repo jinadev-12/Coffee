@@ -13,7 +13,7 @@ export default {
         titlecolor: "var(--title-color)",
         textcolor: "var( --text-color)",
         whitecolor: "var(--white-color)",
-        darkcolor: "var(--dark-colorr)",
+        darkcolor: "var(--dark-color)",
         bodycolor: "var(--body-color)",
         bodywhitecolor: "var(--body-white-color)",
         bodyfirstcolor: "var(--body-first-color)",

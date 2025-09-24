@@ -9,7 +9,7 @@ function Navbar() {
   }
   return (
     // main
-    <div className="bg-bodycolor text-white fixed top-0 left-0 w-full">
+    <div className="bg-bodycolor text-white fixed top-0 left-0 w-full z-50">
       {/* Container */}
       <div className="flex justify-between w-[90%] m-auto items-center py-6 max-w-[1100px]">
         {/* logo-text*/}

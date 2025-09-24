@@ -8,7 +8,7 @@ import ice2 from "../Components/Assets/ice-img.png";
 import bean from "../Components/Assets/bean-img.png";
 function Home() {
   return (
-    // main
+    // main 
     <div className="bg-bodycolor pt-40 font-saira lg:h-[100vh] overflow-x-hidden">
       {/* container */}
       <div className="text-center relative w-[90%] m-auto ">
