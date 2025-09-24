@@ -7,18 +7,18 @@ import bean from "../Components/Assets/bean-img.png";
 function Popular() {
   return (
     // main
-    <div className="bg-bodywhitecolor h-[100vh] ">
+    <div className="bg-bodywhitecolor lg:h-[100vh] ">
       {/* Container */}
       <div className=" m-auto font-saira pt-16">
         {/* heading */}
-        <h1 className="text-bodycolor text-4xl font-medium text-center">
+        <h1 className="text-bodycolor text-4xl font-medium text-center lg:text-6xl">
           POPULAR <br />
           CREATIONS
         </h1>
         {/* card-container */}
-        <div className="flex overflow-x-scroll gap-28 ">
+        <div className="flex overflow-x-scroll gap-28 no-scrollbar lg:w-[1000px] m-auto">
           {/* card- 1*/}
-          <div className="flex flex-col  ml-20 m-auto">
+          <div className="flex flex-col  ml-20 m-auto lg:ml-5">
             {/* image and bg*/}
             <div className="relative w-60 h-60 m-auto mt-12">
               {/* image */}
@@ -52,7 +52,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
@@ -92,7 +92,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
@@ -132,7 +132,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
@@ -172,7 +172,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
@@ -212,7 +212,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
@@ -252,7 +252,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
@@ -292,7 +292,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
@@ -332,7 +332,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
@@ -372,7 +372,7 @@ function Popular() {
                 Indulge in the simplicity of our delicious cold brew coffee.
               </p>
               {/* button */}
-              <button className="bg-darkcolor  block m-auto text-white px-4 py-2">
+              <button className="bg-darkcolor  block m-auto text-white px-4 py-2 lg:text-xl">
                 Order now:$19.90
               </button>
             </div>
