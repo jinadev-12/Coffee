@@ -18,7 +18,6 @@ function Home() {
         </h1>
         {/* data */}
         <div className="">
-         
           {/* half circle and images */}
           <div className="relative w-[350px]   m-auto">
             {/* images */}
@@ -28,7 +27,11 @@ function Home() {
                 alt=""
                 className="absolute bottom-[-20px] right-[120px]  z-20 w-[120px] rotate-[13deg] "
               />
-              <img src={splash} alt="" className="absolute z-10 bottom-0 w-64 right-14" />
+              <img
+                src={splash}
+                alt=""
+                className="absolute z-10 bottom-0 w-64 right-14"
+              />
               <img
                 src={sticker}
                 alt=""
@@ -39,9 +42,21 @@ function Home() {
                 alt=""
                 className="absolute top-[200px] right-[140px] w-10 rotate-[-15deg] z-20"
               />
-              <img src={ice1} alt="" className="absolute w-8 top-[160px] left-20 z-20" />
-              <img src={ice2} alt="" className="absolute w-8 right-[84px] top-14 rotate-[70deg]"/>
-              <img src={bean} alt="" className="absolute w-10 left-[70px] top-5" />
+              <img
+                src={ice1}
+                alt=""
+                className="absolute w-8 top-[160px] left-20 z-20"
+              />
+              <img
+                src={ice2}
+                alt=""
+                className="absolute w-8 right-[84px] top-14 rotate-[70deg]"
+              />
+              <img
+                src={bean}
+                alt=""
+                className="absolute w-10 left-[70px] top-5"
+              />
             </div>
             {/* half circle */}
             <div className="w-52 h-52 bg-firstcolor m-auto rounded-full [clip-path:inset(50%_0_0_0)] z-0"></div>
@@ -54,12 +69,11 @@ function Home() {
               the pleasure and enjoy a good coffe <br />
               order now
             </p>
-            <button className="mt-5 text-white text-lg bg-firstcolor p-2">
+            <button className="mt-5 text-white text-lg bg-firstcolor p-2 mb-10">
               Learn More
             </button>
           </div>
         </div>
-        
       </div>
     </div>
   );
