@@ -9,7 +9,7 @@ import bean from "../Components/Assets/bean-img.png";
 function Home() {
   return (
     // main
-    <div className="bg-bodycolor pt-10 font-saira lg:h-[100vh]">
+    <div className="bg-bodycolor pt-10 font-saira lg:h-[100vh] overflow-x-hidden">
       {/* container */}
       <div className="text-center relative w-[90%] m-auto ">
         <h1 className="text-5xl  font-semibold text-white lg:text-9xl lg:text-center ">
