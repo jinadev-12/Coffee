@@ -11,7 +11,7 @@ function Navbar() {
     // main
     <div className="bg-bodycolor text-white">
       {/* Container */}
-      <div className="flex justify-between w-[90%] m-auto items-center py-6">
+      <div className="flex justify-between w-[90%] m-auto items-center py-6 max-w-[1100px]">
         {/* logo-text*/}
         <div className="font-saira font-semibold text-xl">STARCOFFEE</div>
         {/* links or menu */}
