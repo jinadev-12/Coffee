@@ -3,6 +3,8 @@ import './index.css'
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Popular from './Components/Popular';
+import About from "./Components/About";
+
 
 
 
@@ -14,6 +16,7 @@ function App() {
       <Navbar />
       <Home />
       <Popular/>
+      <About/>
     </div>
   );
 }
