@@ -1,7 +1,6 @@
 import React from 'react'
 import bag from "../Components/Assets/about-coffee.png";
 import leaf1 from "../Components/Assets/leaf-img.png";
-import leaf2 from "../Components/Assets/leaf-img.png";
 
 function About() {
   return (

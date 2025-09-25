@@ -5,6 +5,10 @@ import Home from './Components/Home';
 import Popular from './Components/Popular';
 import About from "./Components/About";
 import Products from "./Components/Products";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+
+
 
 
 
@@ -19,6 +23,8 @@ function App() {
       <Popular/>
       <About/>
       <Products/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
