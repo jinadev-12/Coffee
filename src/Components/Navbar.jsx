@@ -51,11 +51,23 @@ function Navbar() {
               onClick={sidebaropen}
             ></i>
             <ul className="flex flex-col gap-14 text-xl font-medium font-saira mt-10">
-              <li>HOME</li>
-              <li>POPULAR</li>
-              <li>ABOUT US</li>
-              <li>PRODUCTS</li>
-              <li>CONTACT</li>
+              <li>
+                <a href="#home" onClick={() => setIsOpen(false)}>
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a href="#popular" onClick={() => setIsOpen(false)}>POPULAR</a>
+              </li>
+              <li>
+                <a href="#aboutus" onClick={() => setIsOpen(false)}>ABOUT US</a>
+              </li>
+              <li>
+                <a href="#products" onClick={() => setIsOpen(false)}>PRODUCTS</a>
+              </li>
+              <li>
+                <a href="#contact" onClick={() => setIsOpen(false)}>CONTACT</a>
+              </li>
             </ul>
           </div>
         </div>
