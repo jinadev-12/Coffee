@@ -65,7 +65,7 @@ function About() {
 
   return (
     // main
-    <div ref={section2Ref} className="lg:h-[100vh] bg-bodycolor mt-14">
+    <div id="aboutus" ref={section2Ref} className="lg:h-[100vh] bg-bodycolor mt-14">
       {/* Container */}
       <div className="w-[90%] font-saira  flex flex-col text-center m-auto pt-20 gap-10 lg:flex lg:flex-row lg:text-left max-w-[1100px] lg:pt-52 lg:gap-28">
         {/* details */}
@@ -114,3 +114,4 @@ function About() {
 
 export default About;
 
+ 

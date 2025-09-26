@@ -47,7 +47,7 @@ function Products() {
                   duration: 1,
                   scrollTrigger: {
                     trigger: card2Ref.current,
-                    start: "top 50%",
+                    start: "top 68%",
                   },
                 }
               );
@@ -65,7 +65,7 @@ function Products() {
 
   return (
     // main
-    <div ref={section3Ref} className=" bg-firstcoloralt ">
+    <div id="products" ref={section3Ref} className=" bg-firstcoloralt ">
       {/* container */}
       <div className="font-saira m-auto w-[90%] text-center py-20 ">
         <h1 className="text-4xl font-semibold text-darkcolor lg:text-6xl">

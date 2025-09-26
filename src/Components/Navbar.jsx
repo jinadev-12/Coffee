@@ -19,11 +19,21 @@ function Navbar() {
           {/* links */}
           <div className="font-mont hidden lg:block">
             <ul className="flex gap-12 items-center font-medium font-saira">
-              <li className="hover:text-firstcolor">HOME</li>
-              <li className="hover:text-firstcolor">POPULAR</li>
-              <li className="hover:text-firstcolor">ABOUT US</li>
-              <li className="hover:text-firstcolor">PRODUCTS</li>
-              <li className="hover:text-firstcolor">CONTACT</li>
+              <li className="hover:text-firstcolor">
+                <a href="#home">HOME</a>
+              </li>
+              <li className="hover:text-firstcolor">
+                <a href="#popular">POPULAR</a>
+              </li>
+              <li className="hover:text-firstcolor">
+                <a href="#aboutus">ABOUT US</a>
+              </li>
+              <li className="hover:text-firstcolor">
+                <a href="#products">PRODUCTS</a>
+              </li>
+              <li className="hover:text-firstcolor">
+                <a href="#contact">CONTACT</a>
+              </li>
             </ul>
           </div>
           {/* menu */}

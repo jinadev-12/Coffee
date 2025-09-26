@@ -36,9 +36,9 @@ function Popular() {
 
   return (
     // main
-    <div ref={section1Ref} className="bg-bodywhitecolor lg:h-[100vh] ">
+    <div id="popular" ref={section1Ref} className="bg-bodywhitecolor lg:h-[100vh] ">
       {/* Container */}
-      <div className=" m-auto font-saira pt-16">
+      <div className=" m-auto font-saira pt-[75px]">
         {/* heading */}
         <h1 className="text-bodycolor text-4xl font-medium text-center lg:text-6xl">
           POPULAR <br />

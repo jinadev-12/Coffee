@@ -76,7 +76,7 @@ gsap.fromTo(
     }, []);
   return (
     // main
-    <div ref={section4Ref} className="lg:h-[100vh] bg-bodycolor">
+    <div id="contact" ref={section4Ref} className="lg:h-[100vh] bg-bodycolor">
       {/* Container */}
       <div className="w-[90%] m-auto pt-20 text-center font-saira text-white pb-12">
         <h1 className="text-4xl font-semibold lg:text-7xl">CONTACT US</h1>

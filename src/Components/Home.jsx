@@ -203,7 +203,7 @@ gsap.fromTo(
      }, []);
   return (
     // main
-    <div className="bg-bodycolor pt-40 font-saira lg:h-[100vh] overflow-x-hidden">
+    <div id="home" className="bg-bodycolor pt-40 font-saira lg:h-[100vh] overflow-x-hidden">
       {/* container */}
       <div className="text-center relative w-[90%] m-auto ">
         <h1 ref={headRef} className="text-5xl  font-semibold text-white lg:text-9xl lg:text-center ">
