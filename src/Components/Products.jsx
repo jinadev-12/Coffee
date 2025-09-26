@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 import glassCoffee1 from "../Components/Assets/products-coffee-1.png";
 import glassCoffee2 from "../Components/Assets/products-coffee-2.png";
 import glassCoffee3 from "../Components/Assets/products-coffee-3.png";
@@ -9,9 +12,60 @@ import ice1 from "../Components/Assets/ice-img.png";
 import ice2 from "../Components/Assets/ice-img.png";
 
 function Products() {
+
+  const section3Ref = useRef(null);
+      const card1Ref = useRef(null);
+            const card2Ref = useRef(null);
+
+
+          useEffect(() => {
+            const ctx = gsap.context(() => {
+              // container-1
+
+              gsap.fromTo(
+                card1Ref.current,
+                { y: -40, autoAlpha: 0 }, // start
+                {
+                  y: 0,
+                  autoAlpha: 1, // end
+                  duration: 1,
+                  scrollTrigger: {
+                    trigger: card1Ref.current,
+                    start: "top 50%",
+                  },
+                }
+              );
+
+              // container-2
+
+              gsap.fromTo(
+                card2Ref.current,
+                { y: -40, autoAlpha: 0 }, // start
+                {
+                  y: 0,
+                  autoAlpha: 1, // end
+                  duration: 1,
+                  scrollTrigger: {
+                    trigger: card2Ref.current,
+                    start: "top 50%",
+                  },
+                }
+              );
+
+
+            }, section3Ref);
+          }, []);
+
+          
+
+          
+           
+
+
+
   return (
     // main
-    <div className=" bg-firstcoloralt ">
+    <div ref={section3Ref} className=" bg-firstcoloralt ">
       {/* container */}
       <div className="font-saira m-auto w-[90%] text-center py-20 ">
         <h1 className="text-4xl font-semibold text-darkcolor lg:text-6xl">
@@ -21,7 +75,10 @@ function Products() {
         {/* card- container */}
         <div className=" flex justify-center gap-6 mt-6 lg:flex-col lg:items-center lg:gap-10">
           {/* card-main-1 */}
-          <div className="flex flex-col gap-6 lg:flex-row lg:gap-16">
+          <div
+            ref={card1Ref}
+            className="flex flex-col gap-6 lg:flex-row lg:gap-16"
+          >
             {/* card-1 */}
             <div className="w-[160px] h-[220px] bg-darkcolor relative lg:w-[230px] lg:h-[300px]">
               {/* img */}
@@ -117,7 +174,10 @@ function Products() {
             </div>
           </div>
           {/* card-main-2 */}
-          <div className="flex flex-col gap-6 lg:flex-row lg:gap-16">
+          <div
+            ref={card2Ref}
+            className="flex flex-col gap-6 lg:flex-row lg:gap-16"
+          >
             {/* card-1 */}
             <div className="w-[160px] h-[220px] bg-darkcolor relative lg:w-[230px] lg:h-[300px]">
               {/* img */}
@@ -219,4 +279,3 @@ function Products() {
 }
 
 export default Products;
-

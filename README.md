@@ -1,7 +1,4 @@
 
-import bucket from "../assets/img/order-img-1.png";
-import chicken1 from "../assets/img/chicken-dam-5.png";
-import chicken2 from "../assets/img/chicken-dam-6.png";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -28,10 +25,12 @@ gsap.registerPlugin(ScrollTrigger);
              duration: 1,
              scrollTrigger: {
                trigger: sectionRef.current,
-               start: "top 80%",
+               start: "bottom 80%",
              },
            }
          );
      }, sectionRef);
    
    },[])
+
+

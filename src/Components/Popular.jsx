@@ -1,13 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger} from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 import glassCoffee1 from "../Components/Assets/popular-coffee-1.png";
 import glassCoffee2 from "../Components/Assets/popular-coffee-2.png";
 import glassCoffee3 from "../Components/Assets/popular-coffee-3.png";
 import bean from "../Components/Assets/bean-img.png";
 
+
+
 function Popular() {
+
+    const section1Ref = useRef(null);
+    const mainRef = useRef(null);
+
+    useEffect(() => {
+      const ctx = gsap.context(() => {
+        // main
+
+        gsap.fromTo(
+          mainRef.current,
+          { y: -60, autoAlpha: 0 }, // start
+          {
+            y: 0,
+            autoAlpha: 1, // end
+            duration: 2,
+            scrollTrigger: {
+              trigger: section1Ref.current,
+              start: "top 50%",
+            },
+          }
+        );
+      }, section1Ref);
+    }, []);
+
   return (
     // main
-    <div className="bg-bodywhitecolor lg:h-[100vh] ">
+    <div ref={section1Ref} className="bg-bodywhitecolor lg:h-[100vh] ">
       {/* Container */}
       <div className=" m-auto font-saira pt-16">
         {/* heading */}
@@ -16,7 +45,7 @@ function Popular() {
           CREATIONS
         </h1>
         {/* card-container */}
-        <div className="flex overflow-x-scroll gap-28 no-scrollbar lg:w-[1000px] m-auto">
+        <div ref={mainRef} className="flex overflow-x-scroll gap-28 no-scrollbar lg:w-[1000px] m-auto">
           {/* card- 1*/}
           <div className="flex flex-col  ml-20 m-auto lg:ml-5">
             {/* image and bg*/}
