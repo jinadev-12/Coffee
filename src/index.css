@@ -30,3 +30,6 @@
   --body-white-color: hsl(0, 0%, 100%);
   --body-first-color: hsl(166, 80%, 40%);
 }
+html {
+  scroll-behavior: smooth;
+}
